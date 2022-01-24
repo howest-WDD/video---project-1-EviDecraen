@@ -24,6 +24,10 @@ h1, h2, h3 {
   font-weight: 900 !important;
 }
 
+ul {
+  list-style: none;
+}
+
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
@@ -96,7 +100,8 @@ h1, h2, h3 {
 }
 
 .c-aanbod {
-  padding: 6rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .c-aanbod__text {
@@ -106,6 +111,7 @@ h1, h2, h3 {
 
 .c-aanbod__lijst {
   margin-left: 3rem;
+  list-style: disc;
 }
 
 .c-donuts {
@@ -129,7 +135,8 @@ h1, h2, h3 {
           box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
   color: #454545;
   text-decoration: none;
-  border-radius: .4rem;
+  border: none;
+  border-radius: .4rem !important;
   font-weight: 700;
   -webkit-transition: background-color .3s ease-out, margin-left .2s ease-in, -webkit-box-shadow .2s ease-in;
   transition: background-color .3s ease-out, margin-left .2s ease-in, -webkit-box-shadow .2s ease-in;
@@ -162,6 +169,55 @@ h1, h2, h3 {
   text-align: center;
 }
 
+.c-kaart {
+  padding: 0 !important;
+  width: 100%;
+}
+
+.c-contact {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #f04999;
+  color: #fff;
+}
+
+.c-contact__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+}
+
+.c-contact__icon {
+  height: 2rem;
+  width: auto;
+  fill: #fff;
+  margin-right: 1rem;
+}
+
+.c-contact__locatie {
+  font-size: 1.25rem;
+}
+
+.c-contact__uren {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c-contact__dagen {
+  padding-left: 0;
+}
+
+.c-socials__icon {
+  fill: #fff;
+  height: 2rem;
+  width: auto;
+}
+
 /*---------------------------------------/*
  # BOOTSTRAP
 /*---------------------------------------*/
@@ -169,6 +225,7 @@ h1, h2, h3 {
   color: #454545 !important;
   -webkit-transition: color 0.3s ease-in !important;
   transition: color 0.3s ease-in !important;
+  font-weight: 700;
 }
 
 .nav-link:hover {
@@ -192,6 +249,37 @@ h1, h2, h3 {
 
 .navbar-toggler {
   border: none !important;
+}
+
+.form-label {
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.form-control {
+  border: none;
+  -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+  margin-right: 1rem;
+  border: none !important;
+  border-radius: .4rem !important;
+  color: #454545 !important;
+  padding: .8rem 1rem !important;
+  -webkit-transition: -webkit-box-shadow .15s ease-in !important;
+  transition: -webkit-box-shadow .15s ease-in !important;
+  transition: box-shadow .15s ease-in !important;
+  transition: box-shadow .15s ease-in, -webkit-box-shadow .15s ease-in !important;
+}
+
+.form-control:hover {
+  cursor: text;
+}
+
+.form-control:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(241, 183, 0, 0.5) !important;
+          box-shadow: 0 0 0 0.25rem rgba(241, 183, 0, 0.5) !important;
 }
 
 /*---------------------------------------/*
