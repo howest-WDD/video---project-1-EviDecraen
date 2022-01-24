@@ -15,8 +15,7 @@ $shadow: 4px 4px 0 rgba(0,0,0,.15);
 
 $font: 'Lato', sans-serif;
 
-$fontsize-subtitle: 1.25rem;
-$fontsize-icon: 2rem;
+$size-icon: 2rem;
 
 /*---------------------------------------/*
  # GENERIC
@@ -161,7 +160,7 @@ ul {
         padding-top: 1rem;
     }
     &__icon {
-        height: 2rem;
+        height: $size-icon;
         width: auto;
         fill: $color-white;
         margin-right: 1rem;
@@ -177,10 +176,25 @@ ul {
     }
 }
 .c-socials {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    &__link {
+        text-decoration: none;
+    }
     &__icon {
+        margin: .5rem;
         fill: $color-white;
-        height: 2rem;
+        height: $size-icon;
         width: auto;
+        filter: drop-shadow($shadow);
+        transition: fill .3s ease-in, filter .2s ease-in, padding-top .2s ease-in, padding-left .2s ease-in;
+        &:hover {
+            fill: #f4f4f4;
+            filter: none;
+            padding-top: .1rem;
+            padding-left: .1rem;
+        }
     }
 }
 /*---------------------------------------/*
@@ -223,13 +237,24 @@ ul {
         border-radius: .4rem !important;
         color: $color-darkgrey !important;
         padding: .8rem 1rem !important;
-        transition: box-shadow .15s ease-in !important;
+        transition: box-shadow .15s ease-in, background-color .2s ease-out !important;
         &:hover {
             cursor: text;
+            background-color: #f4f4f4;
+            box-shadow: none;
         }
         &:focus {
             box-shadow: 0 0 0 0.25rem rgba(241, 183, 0, 0.5) !important;
         }
+    }
+}
+.c-howest {
+    display: flex;
+    justify-content: center;
+    &__img {
+        margin-top: 5rem;
+        height: 16rem;
+        width: auto;
     }
 }
 /*---------------------------------------/*

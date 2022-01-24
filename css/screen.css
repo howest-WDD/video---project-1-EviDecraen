@@ -212,10 +212,41 @@ ul {
   padding-left: 0;
 }
 
+.c-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.c-socials__link {
+  text-decoration: none;
+}
+
 .c-socials__icon {
+  margin: .5rem;
   fill: #fff;
   height: 2rem;
   width: auto;
+  -webkit-filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(4px 4px 0 rgba(0, 0, 0, 0.15));
+  -webkit-transition: fill .3s ease-in, padding-top .2s ease-in, padding-left .2s ease-in, -webkit-filter .2s ease-in;
+  transition: fill .3s ease-in, padding-top .2s ease-in, padding-left .2s ease-in, -webkit-filter .2s ease-in;
+  transition: fill .3s ease-in, filter .2s ease-in, padding-top .2s ease-in, padding-left .2s ease-in;
+  transition: fill .3s ease-in, filter .2s ease-in, padding-top .2s ease-in, padding-left .2s ease-in, -webkit-filter .2s ease-in;
+}
+
+.c-socials__icon:hover {
+  fill: #f4f4f4;
+  -webkit-filter: none;
+          filter: none;
+  padding-top: .1rem;
+  padding-left: .1rem;
 }
 
 /*---------------------------------------/*
@@ -267,19 +298,37 @@ ul {
   border-radius: .4rem !important;
   color: #454545 !important;
   padding: .8rem 1rem !important;
-  -webkit-transition: -webkit-box-shadow .15s ease-in !important;
-  transition: -webkit-box-shadow .15s ease-in !important;
-  transition: box-shadow .15s ease-in !important;
-  transition: box-shadow .15s ease-in, -webkit-box-shadow .15s ease-in !important;
+  -webkit-transition: background-color .2s ease-out, -webkit-box-shadow .15s ease-in !important;
+  transition: background-color .2s ease-out, -webkit-box-shadow .15s ease-in !important;
+  transition: box-shadow .15s ease-in, background-color .2s ease-out !important;
+  transition: box-shadow .15s ease-in, background-color .2s ease-out, -webkit-box-shadow .15s ease-in !important;
 }
 
 .form-control:hover {
   cursor: text;
+  background-color: #f4f4f4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .form-control:focus {
   -webkit-box-shadow: 0 0 0 0.25rem rgba(241, 183, 0, 0.5) !important;
           box-shadow: 0 0 0 0.25rem rgba(241, 183, 0, 0.5) !important;
+}
+
+.c-howest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.c-howest__img {
+  margin-top: 5rem;
+  height: 16rem;
+  width: auto;
 }
 
 /*---------------------------------------/*
