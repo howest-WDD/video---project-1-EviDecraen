@@ -1,82 +1,77 @@
 /*---------------------------------------/*
  # SETTINGS
 /*---------------------------------------*/
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
-
-$color-white: #fff;
-$color-darkgrey: #454545;
-$color-pink: #f04999;
-$color-darkyellow: #d8a400;
-$color-yellow: #f1b700;
-$color-lightyellow: #efd992;
-
-$shadow: 4px 4px 0 rgba(0,0,0,.15);
-
-
-$font: 'Lato', sans-serif;
-
-$fontsize-text: 1rem;
-$fontsize-title: 1.4rem;
-$fontsize-subtitle: 1.25rem;
-$fontsize-icon: 2rem;
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 /*---------------------------------------/*
  # GENERIC
 /*---------------------------------------*/
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 /*---------------------------------------/*
  # ELEMENTS
 /*---------------------------------------*/
-body{
-    font-family: $font;
+body {
+  font-family: "Lato", sans-serif;
 }
+
 /*---------------------------------------/*
  # OBJECTS
 /*---------------------------------------*/
-
 /*---------------------------------------/*
  # COMPONENTS
 /*---------------------------------------*/
 .c-header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 999;
   background-color: white;
-  &__logo {
-    height: 2rem;
-    width: auto;
-  }
 }
+
+.c-header__logo {
+  height: 2rem;
+  width: auto;
+}
+
 /*---------------------------------------/*
  # BOOTSTRAP
 /*---------------------------------------*/
 .nav-link {
-    color: $color-darkgrey !important;
-    transition: color 0.3s ease-in !important;
-    &:hover {
-        color: $color-pink !important;
-    }
+  color: #454545 !important;
+  -webkit-transition: color 0.3s ease-in !important;
+  transition: color 0.3s ease-in !important;
 }
+
+.nav-link:hover {
+  color: #f04999 !important;
+}
+
 .dropdown-item {
-    color: $color-darkgrey !important;
-    transition: color 0.3s ease-in;
-    transition: background-color 0.5s ease-out;
-    &:hover {
-        color: $color-pink !important;
-    }
+  color: #454545 !important;
+  -webkit-transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in;
+  -webkit-transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out;
 }
+
+.dropdown-item:hover {
+  color: #f04999 !important;
+}
+
 .active {
-  color: $color-pink !important;
+  color: #f04999 !important;
   background-color: white !important;
 }
+
 .navbar-toggler {
-    border: none !important;
+  border: none !important;
 }
+
 /*---------------------------------------/*
  # UTILITIES
 /*---------------------------------------*/
