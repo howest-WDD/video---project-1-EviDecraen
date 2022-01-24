@@ -16,7 +16,12 @@
  # ELEMENTS
 /*---------------------------------------*/
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif !important;
+  color: #454545 !important;
+}
+
+h1, h2, h3 {
+  font-weight: 900 !important;
 }
 
 /*---------------------------------------/*
@@ -31,11 +36,127 @@ body {
   top: 0;
   z-index: 999;
   background-color: white;
+  -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 .c-header__logo {
   height: 2rem;
   width: auto;
+}
+
+.c-welkom {
+  text-align: center;
+  padding: 5rem;
+}
+
+.c-welkom__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-welkom__img {
+  height: 2.5rem;
+  width: auto;
+  margin: 1rem;
+  margin-top: .5rem;
+}
+
+.c-welkom__img-rotate {
+  -webkit-transform: rotate(235deg);
+          transform: rotate(235deg);
+}
+
+.c-welkom__text {
+  margin-top: 1rem;
+}
+
+.c-over {
+  background-color: #f04999;
+  padding: 5rem;
+  color: #fff;
+}
+
+.c-img {
+  padding: 0 !important;
+}
+
+.c-aanbod {
+  padding: 6rem;
+}
+
+.c-aanbod__text {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.c-aanbod__lijst {
+  margin-left: 3rem;
+}
+
+.c-donuts {
+  background-color: #f04999;
+  color: #fff;
+}
+
+.c-donuts__img {
+  padding-left: 0 !important;
+}
+
+.c-donuts__text {
+  margin-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.c-button {
+  background: #f1b700;
+  padding: .8rem 1rem;
+  -webkit-box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+  color: #454545;
+  text-decoration: none;
+  border-radius: .4rem;
+  font-weight: 700;
+  -webkit-transition: background-color .3s ease-out;
+  transition: background-color .3s ease-out;
+  -webkit-transition: -webkit-box-shadow .3s ease-out;
+  transition: -webkit-box-shadow .3s ease-out;
+  transition: box-shadow .3s ease-out;
+  transition: box-shadow .3s ease-out, -webkit-box-shadow .3s ease-out;
+  -webkit-transition: margin-left .1s ease-in;
+  transition: margin-left .1s ease-in;
+}
+
+.c-button:hover {
+  background-color: #d8a400;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #454545;
+  margin-left: .2rem;
+}
+
+.c-bestel {
+  padding-bottom: 6rem;
+}
+
+.c-bestel__text {
+  margin-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.c-bestel__maatregelen {
+  background-color: #efd992;
+  padding: 1rem;
+  padding-bottom: 0;
+  border-radius: .4rem;
+  text-align: center;
 }
 
 /*---------------------------------------/*
