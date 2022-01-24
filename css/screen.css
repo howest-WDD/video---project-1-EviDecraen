@@ -45,7 +45,7 @@ ul {
 }
 
 .c-header__logo {
-  height: 2rem;
+  height: 2.5rem;
   width: auto;
 }
 
@@ -188,7 +188,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 1rem;
+  padding-top: 2rem;
 }
 
 .c-contact__icon {
@@ -242,7 +242,7 @@ ul {
 }
 
 .c-socials__icon:hover {
-  fill: #f4f4f4;
+  fill: #f0f0f0;
   -webkit-filter: none;
           filter: none;
   padding-top: .1rem;
@@ -253,6 +253,7 @@ ul {
  # BOOTSTRAP
 /*---------------------------------------*/
 .nav-link {
+  font-size: 1.2rem;
   color: #454545 !important;
   -webkit-transition: color 0.3s ease-in !important;
   transition: color 0.3s ease-in !important;

@@ -52,7 +52,7 @@ ul {
   background-color: white;
   box-shadow: 0 4px 4px rgba(0,0,0,.15);
   &__logo {
-    height: 2rem;
+    height: 2.5rem;
     width: auto;
   }
 }
@@ -157,7 +157,7 @@ ul {
     &__content {
         display: flex;
         justify-content: center;
-        padding-top: 1rem;
+        padding-top: 2rem;
     }
     &__icon {
         height: $size-icon;
@@ -190,7 +190,7 @@ ul {
         filter: drop-shadow($shadow);
         transition: fill .3s ease-in, filter .2s ease-in, padding-top .2s ease-in, padding-left .2s ease-in;
         &:hover {
-            fill: #f4f4f4;
+            fill: #f0f0f0;
             filter: none;
             padding-top: .1rem;
             padding-left: .1rem;
@@ -201,6 +201,7 @@ ul {
  # BOOTSTRAP
 /*---------------------------------------*/
 .nav-link {
+    font-size: 1.2rem;
     color: $color-darkgrey !important;
     transition: color 0.3s ease-in !important;
     font-weight: 700;
