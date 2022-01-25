@@ -387,6 +387,30 @@ ul {
   margin-top: 5rem;
 }
 
+.c-top {
+  z-index: 999;
+  fill: #f1b700;
+  position: fixed;
+  bottom: 1vh;
+  right: 1vh;
+  height: 2.3rem;
+  width: auto;
+  -webkit-filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0.15));
+  -webkit-transition: fill .3s ease-in, padding-top .2s ease-in, padding-left .2s ease-in, -webkit-filter .3s ease-in;
+  transition: fill .3s ease-in, padding-top .2s ease-in, padding-left .2s ease-in, -webkit-filter .3s ease-in;
+  transition: fill .3s ease-in, filter .3s ease-in, padding-top .2s ease-in, padding-left .2s ease-in;
+  transition: fill .3s ease-in, filter .3s ease-in, padding-top .2s ease-in, padding-left .2s ease-in, -webkit-filter .3s ease-in;
+}
+
+.c-top:hover {
+  fill: #d8a400;
+  -webkit-filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0));
+          filter: drop-shadow(2px 2px 0 rgba(0, 0, 0, 0));
+  padding-top: .1rem;
+  padding-left: .1rem;
+}
+
 /*---------------------------------------/*
  # BOOTSTRAP
 /*---------------------------------------*/
