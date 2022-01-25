@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/screen.css">
     <title>Doh Nuts</title>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="90">
     <header class="c-header">
         <div class="container">
             <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
@@ -69,7 +69,7 @@
         </div>
         <section class="container c-welkom">
             <div class="row">
-                <div class="col-md-8 offset-md-2">
+                <div class="col-lg-8 offset-lg-2">
                     <div class="c-welkom__title">
                         <img class="c-welkom__img c-welkom__img-rotate" src="assets/images/donut.png" alt="Donut" height="200" width="200">
                         <h1>Welkom bij Doh Nuts!</h1>
@@ -84,14 +84,14 @@
         <section class="c-over">
             <div class="container">
                 <div class="row align-items-center">
-                    <h2>Over ons</h2>
+                    <h2 class="c-over__title">Over ons</h2>
                     <div class="col-lg-5">
                         <p>Logino Dujardin en Quirensa Verstraete, de eigenaars van Doh Nuts!, hebben door de pandemie hun carriere deels on hold
                         moeten zetten, maar ze bleven niet bij de pakken zitten.</p>
                         <p>Als jonge ouders dachten ze al snel eraan om iets te doen voor de jeugd en zo zijn ze op het idee van donutshop gekomen,
                         want wie eet er nu niet eens graag een donut.</p>
                     </div>
-                    <img src="assets/images/video.gif" alt="Video Placeholder" class="col-lg-6 offset-lg-1">
+                    <img src="assets/images/video.gif" alt="Video Placeholder" class="col-lg-6 offset-lg-1 c-over__video">
                 </div>
             </div>
         </section>
@@ -126,7 +126,7 @@
         <span class="c-anchor" id="donuts"></span>
         <section class="container-fluid c-donuts">
             <div class="row align-items-center">
-                <div class="col-md-8 col-lg-6 offset-md-2 offset-lg-0">
+                <div class="col-md-8 col-lg-6 offset-md-2 offset-lg-0 c-donuts__content">
                     <h3 class="c-donuts__title">Donuts</h3>
                     <div class="c-donuts__text">
                         <p>Niet alleen zijn onze donuts te vinden in 50 smaken, ook hebben onze donuts een diameter van 11 centimeter wat ze groter
@@ -147,7 +147,7 @@
                     <a class="c-button" href="#">Bestel je donuts</a>
                 </div>
                 <img src="assets/images/bestel.jpg" alt="" class="col-md-6">
-                <div class="col-md-8 offset-md-2 c-bestel__maatregelen">
+                <div class="col-lg-8 offset-lg-2 c-bestel__maatregelen">
                     <p>In de winkel is het dragen van een mondmasker verplicht en hou altijd 1,5 meter afstand van andere klanten.</p>
                 </div>
             </div>
@@ -165,7 +165,7 @@
             <div class="container">
                 <div class="row">
                     <h2>Contact</h2>
-                    <section class="col-lg-4 c-contact__content">
+                    <section class="col-md-6 col-lg-4 c-contact__content">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill c-contact__icon"
                             viewBox="0 0 16 16">
                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
@@ -195,7 +195,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="col-lg-4 c-contact__content">
+                    <section class="col-md-6 col-lg-4 c-contact__content">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-geo-alt-fill c-contact__icon" viewBox="0 0 16 16">
                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
@@ -225,7 +225,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="col-lg-4 c-contact__content">
+                    <section class="col-md-6 col-lg-4 offset-md-3 offset-lg-0 c-contact__content">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-geo-alt-fill c-contact__icon" viewBox="0 0 16 16">
                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
@@ -255,14 +255,14 @@
                             </div>
                         </div>
                     </section>
-                    <form method="post" action="bestemming" class="col-md-8 c-form">
+                    <form method="post" action="bestemming" class="col-md-9 col-lg-8 c-form">
                         <label for="email" class="form-label">Schrijf je in voor onze nieuwsbrief!</label>
                         <div class="input-group">
                             <input type="email" id="email" placeholder="E-mail" class="form-control">
                             <input type="submit" value="Bevestigen" class="c-button">
                         </div>
                     </form>
-                    <div class="col-md-4 c-socials">
+                    <div class="col-md-3 col-lg-4 c-socials">
                         <a class="c-socials__link" href="https://www.facebook.com/dohnutsbelgium/" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook c-socials__icon" viewBox="0 0 16 16">
                                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />

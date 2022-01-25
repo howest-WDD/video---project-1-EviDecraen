@@ -79,14 +79,26 @@ ul {
 }
 .c-anchor{
   display: block;
-  height: 3.7rem; 
-  margin-top: -3.7rem; 
+  height: 4rem; 
+  margin-top: -4rem; 
   visibility: hidden;
 }
 .c-over {
     background-color: $color-pink;
-    padding: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
     color: $color-white;
+    @media screen and (max-width:991px) {
+        text-align: center;
+    }
+    &__title {
+        padding-bottom: 1rem;
+    }
+    &__video {
+        @media screen and (max-width:991px) {
+            margin-top: 3rem;
+        }
+    }
 }
 .c-img {
     padding: 0;
@@ -106,8 +118,17 @@ ul {
 .c-donuts {
     background-color: $color-pink;
     color: $color-white;
+    &__content {
+        @media screen and (max-width:991px) {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+    }
     &__img {
         padding-left: 0;
+        @media screen and (max-width:991px) {
+            padding-right: 0;
+        }
     }
     &__text {
         margin-top: 1rem;

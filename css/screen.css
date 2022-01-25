@@ -84,15 +84,32 @@ ul {
 
 .c-anchor {
   display: block;
-  height: 3.7rem;
-  margin-top: -3.7rem;
+  height: 4rem;
+  margin-top: -4rem;
   visibility: hidden;
 }
 
 .c-over {
   background-color: #f04999;
-  padding: 5rem;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
   color: #fff;
+}
+
+@media screen and (max-width: 991px) {
+  .c-over {
+    text-align: center;
+  }
+}
+
+.c-over__title {
+  padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+  .c-over__video {
+    margin-top: 3rem;
+  }
 }
 
 .c-img {
@@ -119,8 +136,21 @@ ul {
   color: #fff;
 }
 
+@media screen and (max-width: 991px) {
+  .c-donuts__content {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
 .c-donuts__img {
   padding-left: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .c-donuts__img {
+    padding-right: 0;
+  }
 }
 
 .c-donuts__text {
