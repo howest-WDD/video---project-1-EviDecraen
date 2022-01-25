@@ -69,7 +69,7 @@
         </div>
         <section class="container c-welkom">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2">
+                <div class=" col-lg-8 offset-lg-2">
                     <div class="c-welkom__title">
                         <img class="c-welkom__img c-welkom__img-rotate" src="assets/images/donut.png" alt="Donut" height="200" width="200">
                         <h1>Welkom bij Doh Nuts!</h1>
@@ -106,10 +106,10 @@
         <section class="container c-aanbod">
             <div class="row align-items-center">
                 <div class="col-md-8">
-                    <h2>Ons aanbod</h2>
+                    <h2 class="c-aanbod__title">Ons aanbod</h2>
                     <p class="c-aanbod__text">Ook al zijn wij het meest bekend voor onze donuts, wij bieden ook nog andere lekkernijen aan.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 c-aanbod__aanbod">
                     <p>Zo hebben wij ook:</p>
                     <ul class="c-aanbod__lijst">
                         <li>Doh Boules</li>
@@ -126,7 +126,7 @@
         <span class="c-anchor" id="donuts"></span>
         <section class="container-fluid c-donuts">
             <div class="row align-items-center">
-                <div class="col-md-8 col-lg-6 offset-md-2 offset-lg-0 c-donuts__content">
+                <div class="col-md-6 c-donuts__content">
                     <h3 class="c-donuts__title">Donuts</h3>
                     <div class="c-donuts__text">
                         <p>Niet alleen zijn onze donuts te vinden in 50 smaken, ook hebben onze donuts een diameter van 11 centimeter wat ze groter
@@ -135,7 +135,7 @@
                     </div>
                     <a class="c-button" href="#">Vraag een offerte aan</a>
                 </div>
-                <img src="assets/images/donuts.jpeg" alt="Donuts" class="col-lg-6 order-lg-first c-donuts__img">
+                <img src="assets/images/donuts.jpeg" alt="Donuts" class="col-md-6 order-md-first c-donuts__img">
             </div>
         </section>
         <span class="c-anchor" id="bestel"></span>
@@ -146,7 +146,7 @@
                     <p class="c-bestel__text">Bestel online al wat voor lekkers je wilt hebben en haal het later op in de winkel!</p>
                     <a class="c-button" href="#">Bestel je donuts</a>
                 </div>
-                <img src="assets/images/bestel.jpg" alt="" class="col-md-6">
+                <img src="assets/images/bestel.jpg" alt="" class="col-md-6 c-bestel__img">
                 <div class="col-lg-8 offset-lg-2 c-bestel__maatregelen">
                     <p>In de winkel is het dragen van een mondmasker verplicht en hou altijd 1,5 meter afstand van andere klanten.</p>
                 </div>
@@ -155,17 +155,16 @@
     </main>
     <footer>
         <span class="c-anchor" id="contact"></span>
-        <div class="container-fluid c-kaart">
+        <div class="container-fluid ">
             <div class="row">
-                <iframe class="col-12" height="450" src="https://maps.google.com/maps?q=Lange%20Steenstraat%2023%208500%20Kortriik&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-            
+                <iframe class="col-12 c-kaart" height="450" src="https://maps.google.com/maps?q=Lange%20Steenstraat%2023%208500%20Kortriik&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
             </div>
         </div>
         <section class="c-contact">
             <div class="container">
                 <div class="row">
-                    <h2>Contact</h2>
-                    <section class="col-md-6 col-lg-4 c-contact__content">
+                    <h2 class="c-contact__title">Contact</h2>
+                    <section class="col-md-6 col-lg-4 c-contact__content c-contact__content-first">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill c-contact__icon"
                             viewBox="0 0 16 16">
                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
@@ -274,10 +273,8 @@
                             </svg>
                         </a>
                     </div>
+                    <img class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 c-howest" src="assets/images/howest.png" alt="Howest logo">
                 </div>
-            </div>
-            <div class="c-howest">
-                <img class="c-howest__img" src="assets/images/howest.png" alt="Howest logo" width="1280" height="656">
             </div>
         </section>
     </footer>

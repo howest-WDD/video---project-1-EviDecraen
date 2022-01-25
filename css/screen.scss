@@ -46,11 +46,13 @@ ul {
  # COMPONENTS
 /*---------------------------------------*/
 .c-header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  background-color: white;
-  box-shadow: 0 4px 4px rgba(0,0,0,.15);
+    background-color: white;
+    box-shadow: 0 4px 4px rgba(0,0,0,.15);
+    @media screen and (min-width:768px) {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
   &__logo {
     height: 2.5rem;
     width: auto;
@@ -106,27 +108,49 @@ ul {
 .c-aanbod {
     padding-top: 6rem;
     padding-bottom: 6rem;
+    @media screen and (max-width:767px) {
+        text-align: center;
+    }
     &__text {
         margin-top: 1rem;
         margin-bottom: 2rem;
     }
+    &__aanbod {
+        @media screen and (max-width:767px) {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
     &__lijst {
         margin-left: 3rem;
         list-style: disc;
+        @media screen and (max-width:767px) {
+            margin-bottom: 3rem;
+        }
     }
 }
 .c-donuts {
     background-color: $color-pink;
     color: $color-white;
+    @media screen and (max-width:767px) {
+        text-align: center;
+    }
     &__content {
-        @media screen and (max-width:991px) {
+        @media screen and (max-width:767px) {
             padding-top: 6rem;
             padding-bottom: 6rem;
+        }
+        @media screen and (max-width:767px) {
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 33.75rem;
         }
     }
     &__img {
         padding-left: 0;
-        @media screen and (max-width:991px) {
+        @media screen and (max-width:767px) {
             padding-right: 0;
         }
     }
@@ -154,9 +178,22 @@ ul {
 }
 .c-bestel {
     padding-bottom: 6rem;
+    @media screen and (max-width:767px) {
+        text-align: center;
+    }
+    &__title {
+        @media screen and (max-width:767px) {
+            padding-top: 6rem;
+        }
+    }
     &__text {
         margin-top: 1rem;
         padding-bottom: 1.5rem;
+    }
+    &__img {
+        @media screen and (max-width:767px) {
+            margin-top: 1rem;
+        }
     }
     &__maatregelen {
         background-color: $color-lightyellow;
@@ -169,16 +206,32 @@ ul {
 .c-kaart {
     padding: 0;
     width: 100%;
+    @media screen and (max-width:991px) {
+        height: 25rem;
+    }
+    @media screen and (max-width:767px) {
+        height: 20rem;
+    }
 }
 .c-contact {
     padding-top: 6rem;
     padding-bottom: 6rem;
     background-color: $color-pink;
     color: $color-white;
+    &__title {
+        @media screen and (max-width:767px) {
+            text-align: center;
+        }
+    }
     &__content {
         display: flex;
         justify-content: center;
         padding-top: 2rem;
+        &-first {
+            @media screen and (max-width:767px) {
+                margin-left: 1rem;
+            }
+        }
     }
     &__icon {
         height: $size-icon;
@@ -200,16 +253,23 @@ ul {
     display: flex;
     justify-content: flex-end;
     align-items: end;
+    @media screen and (max-width:767px) {
+        margin-top: 6rem;
+        justify-content: center;
+    }
     &__link {
         text-decoration: none;
     }
     &__icon {
         margin: .5rem;
         fill: $color-white;
-        height: $size-icon;
+        height: 2.3rem;
         width: auto;
         filter: drop-shadow($shadow);
         transition: fill .3s ease-in, filter .2s ease-in, padding-top .2s ease-in, padding-left .2s ease-in;
+        @media screen and (max-width:767px) {
+            margin: .7rem;
+        }
         &:hover {
             fill: #f0f0f0;
             filter: none;
@@ -218,31 +278,43 @@ ul {
         }
     }
 }
+.c-howest {
+    margin-top: 5rem;
+}
 /*---------------------------------------/*
  # BOOTSTRAP
 /*---------------------------------------*/
-.nav-link {
-    font-size: 1.2rem;
-    color: $color-darkgrey !important;
-    transition: color 0.3s ease-in;
-    font-weight: 700;
-    &:hover {
-        color: $color-pink !important;
+.nav {
+    &-link {
+        font-size: 1.2rem;
+        color: $color-darkgrey !important;
+        transition: color 0.3s ease-in;
+        font-weight: 700;
+        &:hover {
+            color: $color-pink !important;
+        }
     }
 }
-.dropdown-item {
-    color: $color-darkgrey !important;
-    transition: color 0.3s ease-in, background-color 0.5s ease-out;
-    &:hover {
-        color: $color-pink !important;
+.dropdown {
+    &-item {
+        color: $color-darkgrey !important;
+        transition: color 0.3s ease-in, background-color 0.5s ease-out;
+        &:hover {
+            color: $color-pink !important;
+        }
     }
 }
 .active {
   color: $color-pink !important;
   background-color: white !important;
 }
-.navbar-toggler {
-    border: none;
+.navbar{
+    &-toggler {
+        border: none;
+        &-icon {
+            background-image: url(../assets/images/hamburger.png) !important;
+        }
+    }
 }
 .form {
     &-label {
@@ -268,15 +340,6 @@ ul {
         &:focus {
             box-shadow: 0 0 0 0.25rem rgba(241, 183, 0, 0.5);
         }
-    }
-}
-.c-howest {
-    display: flex;
-    justify-content: center;
-    &__img {
-        margin-top: 5rem;
-        height: 16rem;
-        width: auto;
     }
 }
 /*---------------------------------------/*
