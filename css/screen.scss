@@ -315,15 +315,19 @@ ul {
 .dropdown {
     &-item {
         color: $color-darkgrey !important;
+        font-weight: 700;
         transition: color 0.3s ease-in, background-color 0.5s ease-out;
         &:hover {
             color: $color-pink !important;
+        }
+        &:active {
+            background-color: $color-white;
         }
     }
 }
 .active {
   color: $color-pink !important;
-  background-color: white !important;
+  background-color: white;
 }
 .navbar{
     &-toggler {
