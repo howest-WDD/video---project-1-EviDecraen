@@ -20,7 +20,7 @@ body {
   color: #454545;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-weight: 900;
 }
 
@@ -452,6 +452,10 @@ ul {
 
 .navbar-toggler-icon {
   background-image: url(../assets/images/hamburger.png) !important;
+}
+
+.carousel-caption {
+  text-shadow: 2px 2px 4px #000;
 }
 
 .form-label {

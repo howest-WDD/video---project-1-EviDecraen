@@ -32,7 +32,7 @@ body{
     font-family: $font;
     color: $color-darkgrey;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-weight: 900;
 }
 ul {
@@ -335,6 +335,11 @@ ul {
         &-icon {
             background-image: url(../assets/images/hamburger.png) !important;
         }
+    }
+}
+.carousel {
+    &-caption {
+        text-shadow: 2px 2px 4px #000;
     }
 }
 .form {
