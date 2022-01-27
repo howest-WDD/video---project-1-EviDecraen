@@ -97,8 +97,8 @@
         <section class="c-over">
             <div class="container">
                 <div class="row align-items-center">
-                    <h2 class="c-over__title">Over ons</h2>
                     <div class="col-lg-5">
+                        <h2 class="c-over__title">Over ons</h2>
                         <p>Logino Dujardin en Quirensa Verstraete, de eigenaars van Doh Nuts!, hebben door de pandemie hun carriere deels on hold
                         moeten zetten, maar ze bleven niet bij de pakken zitten.</p>
                         <p>Als jonge ouders dachten ze al snel eraan om iets te doen voor de jeugd en zo zijn ze op het idee van donutshop gekomen,
@@ -118,19 +118,17 @@
         <span class="c-anchor" id="algemeen"></span>
         <section class="container c-aanbod">
             <div class="row align-items-center">
-                <div class="col-md-8">
+                <div class="col-md-6 c-aanbod__aanbod">
                     <h2 class="c-aanbod__title">Ons aanbod</h2>
                     <p class="c-aanbod__text">Ook al zijn wij het meest bekend voor onze donuts, wij bieden ook nog andere lekkernijen aan.</p>
-                </div>
-                <div class="col-md-6 c-aanbod__aanbod">
                     <p>Zo hebben wij ook:</p>
                     <ul class="c-aanbod__lijst">
-                        <li>Doh Boules</li>
-                        <li>Brownies</li>
-                        <li>Macarons</li>
-                        <li>Muffins</li>
-                        <li>Cookies</li>
-                        <li>Freakshakes</li>
+                        <li class="c-aanbod__item">Doh Boules</li>
+                        <li class="c-aanbod__item">Brownies</li>
+                        <li class="c-aanbod__item">Macarons</li>
+                        <li class="c-aanbod__item">Muffins</li>
+                        <li class="c-aanbod__item">Cookies</li>
+                        <li class="c-aanbod__item">Freakshakes</li>
                     </ul>
                 </div>
                 <img src="assets/images/aanbod.png" alt="Donuts en dergelijken" class="col-md-6">
@@ -158,11 +156,26 @@
                     <h2 class="c-bestel__title">Bestel online</h2>
                     <p class="c-bestel__text">Bestel online al wat voor lekkers je wilt hebben en haal het later op in de winkel!</p>
                     <a class="c-button" href="#">Bestel je donuts</a>
+                    <div>
+                        <button class="c-bestel__button c-button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                            Maatregelen
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="collapse" id="collapseExample">
+                        <div class="c-bestel__maatregelen">
+                            <p>
+                                In de winkel is het dragen van een mondmasker verplicht en hou altijd 1,5 meter afstand van andere klanten.
+                            </p>
+                        </div>
+                    </div>
                 </div>
                 <img src="assets/images/bestel.jpg" alt="" class="col-md-6 c-bestel__img">
-                <div class="col-lg-8 offset-lg-2 c-bestel__maatregelen">
+                <!-- <div class="col-lg-8 offset-lg-2 c-bestel__maatregelen">
                     <p>In de winkel is het dragen van een mondmasker verplicht en hou altijd 1,5 meter afstand van andere klanten.</p>
-                </div>
+                </div> -->
             </div>
         </section>
     </main>
@@ -292,5 +305,7 @@
         </section>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
