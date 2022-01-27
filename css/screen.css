@@ -169,8 +169,6 @@ ul {
   width: 1rem;
   content: "";
   margin-right: .5rem;
-  -webkit-transform: rotate(-55deg);
-          transform: rotate(-55deg);
 }
 
 .c-donuts {
