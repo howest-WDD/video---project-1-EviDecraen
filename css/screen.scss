@@ -348,7 +348,7 @@ ul {
 }
 .active {
   color: $color-pink !important;
-  background-color: white;
+  background-color: white !important;
 }
 .navbar{
     &-toggler {
